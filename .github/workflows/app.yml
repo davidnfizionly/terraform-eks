@@ -34,7 +34,7 @@ jobs:
 
       - name: Build backend
         run: |
-          cd ../backend
+          cd eks-demo-ui/backend
           docker build -t eks-demo-backend .
           docker tag eks-demo-backend:latest 481665100297.dkr.ecr.us-east-1.amazonaws.com/eks-demo-backend:latest
           docker push 481665100297.dkr.ecr.us-east-1.amazonaws.com/eks-demo-backend:latest
