@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eks-demo-frontend
+  labels:
+    app: eks-demo-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: eks-demo-frontend
+  template:
+    metadata:
+      labels:
+        app: eks-demo-frontend
+    spec:
+      containers:
+        - name: frontend
+          image: 481665100297.dkr.ecr.us-east-1.amazonaws.com/eks-demo-frontend:latest
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: eks-demo-frontend-svc
+spec:
+  type: ClusterIP
+  selector:
+    app: eks-demo-frontend
+  ports:
+    - port: 80
+      targetPort: 80
