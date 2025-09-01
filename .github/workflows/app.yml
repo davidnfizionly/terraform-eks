@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'eks-demo-ui/**'
 
 jobs:
   build-and-deploy:
