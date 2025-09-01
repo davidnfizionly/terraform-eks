@@ -1,6 +1,6 @@
-# 🚀 Terraform EKS Demo App
+#  Terraform EKS Demo App
 
-## 🌐 Project Overview
+##  Project Overview
 This project demonstrates a **full end-to-end deployment of a Kubernetes application on Amazon EKS** using **Terraform** for infrastructure and **GitHub Actions** for CI/CD.  
 
 The application stack:  
@@ -10,7 +10,7 @@ The application stack:
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 - **Terraform** provisions:  
   - VPC with public/private subnets, NAT Gateway, route tables  
   - Amazon EKS Cluster + Managed Node Groups  
@@ -82,7 +82,7 @@ This role was then added to the **`aws-auth ConfigMap`** to allow GitHub Actions
 
 ---
 
-## ⚙️ Step-by-Step Setup
+##  Step-by-Step Setup
 
 ### Step 1: Provision Infrastructure with Terraform
 1. Create Terraform configuration (`main.tf`, `variables.tf`, `outputs.tf`)  
@@ -168,7 +168,7 @@ kubectl get ingress
 
 ---
 
-## 📊 Future Improvements
+##  Future Improvements
 - Add HTTPS (SSL termination at ALB)  
 - Add HPA for pod autoscaling  
 - Add Prometheus + Grafana dashboards  
@@ -176,7 +176,7 @@ kubectl get ingress
 
 ---
 
-## 🏆 Skills Demonstrated
+##  Skills Demonstrated
 - AWS Infrastructure with Terraform  
 - Kubernetes Deployment on EKS  
 - GitHub Actions CI/CD with OIDC IAM role  
