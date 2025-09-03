@@ -291,7 +291,7 @@ Amazon ECR repository storing the backend Docker image built via GitHub Actions.
 EKS cluster successfully provisioned via Terraform, with nodes and workloads running.
 
 ### 💻 Local Development Environment
-![Local Dev](./images/local-image.png)  
+![Local Dev](./images/local-images.png)  
 Local terminal output showing Terraform apply and kubectl verifying pods/services.
 
 ### 📦 Docker Images
