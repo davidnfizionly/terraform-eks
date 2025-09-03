@@ -274,33 +274,34 @@ kubectl get ingress
 
 ## 🖼️ Screenshots & Evidence
 
-###  EC2 Load Balancer
+### 🌐 EC2 Load Balancer
 ![EC2 Load Balancer](./images/ec2-load-balancer.png)  
 Amazon EC2 Console showing the Application Load Balancer created by the ALB Ingress Controller.
 
-###  EC2 Target Groups
+### 🎯 EC2 Target Groups
 ![EC2 Target Groups](./images/ec2-target-groups.png)  
 Target groups configured for routing frontend (`/`) and backend (`/api`) traffic.
 
-###  ECR Repository – eks-demo-backend
+### 🐳 ECR Repository – eks-demo-backend
 ![ECR Backend](./images/ecr-backend.png)  
 Amazon ECR repository storing the backend Docker image built via GitHub Actions.
 
-###  EKS Cluster Console
+### ☸️ EKS Cluster Console
 ![EKS Cluster](./images/eks-cluster.png)  
 EKS cluster successfully provisioned via Terraform, with nodes and workloads running.
 
-###  Local Development Environment
-![Local Dev](./images/local-dev.png)  
+### 💻 Local Development Environment
+![Local Dev](./images/local-image.png)  
 Local terminal output showing Terraform apply and kubectl verifying pods/services.
 
-###  Docker Images
+### 📦 Docker Images
 ![Docker Images](./images/docker-images.png)  
 Locally built Docker images for frontend and backend before pushing to ECR.
 
-###  GitHub Actions – Successful Pipelines
+### ✅ GitHub Actions – Successful Pipelines
 ![GitHub Actions](./images/github-actions.png)  
 GitHub Actions CI/CD pipeline showing green checkmarks for Terraform infra + app deployments.
+
 
 ---
 
