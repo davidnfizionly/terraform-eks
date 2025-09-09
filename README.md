@@ -45,6 +45,7 @@ The setup demonstrates:
 ---
 
 ##  Architecture Diagram
+![Architecture Diagram](./images/Terraform.png)
 **
 
 ---
